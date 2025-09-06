@@ -1,0 +1,140 @@
+.team-project-container {
+  margin-top: 20px;
+}
+
+.team-section {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-members {
+  margin-bottom: 15px;
+}
+
+.member-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.add-project {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-project input,
+.create-team input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.create-team {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.project-deadline {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 6px;
+  height: 24px;
+  margin-top: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  background: linear-gradient(to right, #6c5ce7, #00c6ff);
+  height: 100%;
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.progress-text {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 5px;
+}
+
+.empty {
+  color: #777;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6c5ce7;
+  background-color: #f0f0ff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  animation: pulse 2s infinite;
+}
+
+.progress-text.done {
+  background-color: #e0f8e9;
+  color: #2ecc71;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-label {
+  z-index: 2;
+  padding: 0 6px;
+  white-space: nowrap;
+}

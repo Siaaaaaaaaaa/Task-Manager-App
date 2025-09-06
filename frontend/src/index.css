@@ -1,0 +1,72 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f8f9fa; /* light background */
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.todo-title{
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.completed-todo {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.tab-list >span {
+
+  padding: 6px 12px;
+  border: 1px solid rgb(13, 159, 204);
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  
+}
+
+.tab-list > span:hover {
+  background-color: rgba(13, 159, 204, 0.1);
+}
+
+.tab-list > span.active {
+  background-color: rgb(13, 159, 204);
+  color: #fff;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: rgb(13, 159, 204);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(11, 140, 180);
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 12px 16px;
+}
+
+

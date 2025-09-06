@@ -1,0 +1,112 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 550px;
+  width: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.progress-container {
+  position: relative;
+  height: 15px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #6a5acd, #00c6ff);
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.deadline {
+  margin-bottom: 15px;
+}
+
+.deadline input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.subtasks-section {
+  margin-top: 10px;
+}
+
+.subtask-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.subtask-item span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.add-subtask {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-subtask input,
+.add-subtask select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+

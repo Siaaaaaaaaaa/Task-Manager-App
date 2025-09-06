@@ -1,0 +1,183 @@
+/* ===================== Modal Overlay ===================== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ===================== Modal Box ===================== */
+.modal-main {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  position: relative;
+  animation: slideUp 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #555;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-button:hover {
+  transform: rotate(90deg);
+  color: #000;
+}
+
+/* Modal Title */
+.modal-main h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form Labels and Inputs */
+.modal-main label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-main input,
+.modal-main select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.3rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-main input:focus,
+.modal-main select:focus {
+  border-color: #6c5ce7;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108,92,231,0.4);
+}
+
+/* Checkbox Styling */
+.modal-main input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+/* Buttons Container */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+/* Buttons */
+.modal-buttons button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+/* Save Button */
+.modal-buttons button:first-child {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.modal-buttons button:first-child:hover {
+  background: #5941c4;
+  transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.modal-buttons button:last-child {
+  background: #fff;
+  border: 2px solid #6c5ce7;
+  color: #6c5ce7;
+}
+
+.modal-buttons button:last-child:hover {
+  background: #6c5ce7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ===================== Subtask / Extra Details ===================== */
+.subtask-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.subtask-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.subtask-info span {
+  font-weight: bold;
+}
+
+.new-subtask {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.new-subtask input,
+.new-subtask select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-main {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+
+
